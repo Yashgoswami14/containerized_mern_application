@@ -1,4 +1,4 @@
-FROM node:18.9.1
+FROM node:18.9
 
 WORKDIR /app
 
@@ -6,9 +6,8 @@ COPY package.json .
 
 RUN npm install
 
-COPY . .
+COPY . . 
 
 EXPOSE 5050
 
-CMD ["npm", "start"]
-
+CMD ["npm","start"]
